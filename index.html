@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aamch Nashik</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        /* Glowing effect for title */
+        .glowing-text {
+            color: white;
+            text-shadow: 0 0 8px #ffffff, 0 0 16px #00ff00, 0 0 24px #00ff00, 0 0 32px #00ff00;
+            animation: glow 1.5s ease-in-out infinite alternate;
+            border: 2px solid transparent;
+            border-radius: 10px;
+            padding: 5px;
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-color: transparent;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #0008ff, 0 0 20px #66ff00, 0 0 30px #bec4c5, 0 0 40px #ff0066;
+            }
+            to {
+                text-shadow: 0 0 20px #8670a4, 0 0 30px #e3d9e3, 0 0 40px #9a7f9a, 0 0 50px #ff00ff;
+            }
+        }
+
+        /* About section */
+        .about-overlay {
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        /* Cards adjustment */
+        .card {
+            width: 80%;
+            margin: auto;
+        }
+
+        .gap-5 {
+            gap: 2rem !important;
+        }
+
+        /* Footer */
+        .footer {
+            background: rgba(0, 0, 0, 0.7);
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+<div class="container-fluid p-2 bg-image"
+    style="background-image: url('long_slide.jpg'); background-size: cover; background-position: center center;">
+    <div class="row">
+        <div class="col text-center">
+            <h1 class="glowing-text" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 70px;">Aamch Nashik</h1>
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent sticky-top">
+                <div class="container-fluid shadow p-1 mb-2 bg-body-tertiary rounded">
+                    <a class="navbar-brand" href="#about">Aamch Nashik</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contacts">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+
+    <!-- Navbar End -->
+
+    <!-- About Start -->
+    <section id="about" class="section mt-2">
+        <div class="container-fluid">
+            <div class="card">
+                <img src="collage.jpg" class="card-img-top" alt="About Us Image"
+                    style="height: 100%; object-fit: cover; width: 100%;">
+                <div class="card-img-overlay d-flex flex-column align-items-center justify-content-end p-4">
+                    <div class="text-center about-overlay">
+                        <h2 class="text-white" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">About Us</h2>
+                        <p class="text-white" style="font-weight: bold; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Discover the hidden gems of Nashik with our comprehensive travel guide. We've curated a wealth of information on the
+                            region's fascinating forts, ancient temples, and comfortable accommodations. Our goal is to help you plan an unforgettable journey, whether you're a history enthusiast, a spiritual seeker, or simply looking for a
+                            relaxing getaway.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About End -->
+
+    <!-- Forts Start -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Forts</h2>
+        <div class="row row-cols-md-3 g-4">
+            <!-- Fort Card Template -->
+            <div class="col">
+                <div class="card shadow-lg bg-body-tertiary rounded h-100">
+                    <img src="harihar3.jpg" class="card-img-top" alt="Harihar Fort Image" style="height: 200px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Harihar Fort</h5>
+                        <p class="card-text">Harihar Fort (Harshagad) is a historic Nashik fort with unique rock-cut steps. It offers stunning views and is a popular destination for visitors.</p>
+                        <a href="harihar.html" class="btn btn-primary mt-auto">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg bg-body-tertiary rounded h-100">
+                    <img src="aninerimain2.jpg" class="card-img-top" alt="Anjaneri Fort Image" style="height: 200px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Anjineri Fort</h5>
+                        <p class="card-text">Anjaneri Fort is a historic fort in Nashik, linked to the birthplace of Lord Hanuman. It offers scenic views and is popular among trekkers and pilgrims.</p>
+                        <a href="anjineri.html" class="btn btn-primary mt-auto">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg bg-body-tertiary rounded h-100">
+                    <img src="dhodap3.jpg" class="card-img-top" alt="Dhodap Fort Image" style="height: 200px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Dhodap Fort</h5>
+                        <p class="card-text">Dhodap Fort, a 4,829-foot peak in Nashik, is the second-highest fort in the Sahyadri mountains.</p>
+                        <a href="dhodap.html" class="btn btn-primary mt-auto">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Forts End -->
+    
+    <!-- Temples Start -->
+    <div class="container mt-4">
+        <h2 class="text-center mb-3">Temples</h2>
+        <div class="row row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card shadow-lg bg-body-tertiary rounded h-100">
+                    <img src="Bramhagiri.jpg" class="card-img-top" alt="Brahmagiri Temple Image" style="height: 200px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Brahmagiri Temple</h5>
+                        <p class="card-text">Brahmagiri (1298 meters) is to the west of Trimbakeshwar, offering a commanding view of the Jawhar Mokhada region of Thane district. Trimbakeshwar is one of the 12 Jyotirlingas of Lord Shiva.</p>
+                        <a href="brahmagiri.html" class="btn btn-primary mt-auto">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg bg-body-tertiary rounded h-100">
+                    <img src="trimbak3.jpg.jpg" class="card-img-top" alt="Trimbakeshwar Temple Image" style="height: 200px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Trimbakeshwar</h5>
+                        <p class="card-text">Shri Trimbakeshwar Temple is located about 28 km from Nashik, near the Brahmagiri mountain.</p>
+                        <a href="trimbakeshwar.html" class="btn btn-primary mt-auto">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg bg-body-tertiary rounded h-100">
+                    <img src="swaminarayan 5.jpg" class="card-img-top" alt="Swaminarayan Temple Image" style="height: 200px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Swaminarayan Temple</h5>
+                        <p class="card-text">The Shri Swaminarayan Mandir in Nashik is renowned for its architecture and devotion to Krishna.</p>
+                        <a href="swaminarayan.html" class="btn btn-primary mt-auto">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Temples End -->
+
+    <!-- Footer Start -->
+    <footer id="contacts" class="footer text-center text-lg-start text-white mt-5">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <h5 class="text-uppercase">About Aamch Nashik</h5>
+                    <p>
+                        Aamch Nashik is dedicated to showcasing the rich cultural heritage, scenic beauty, and historical significance of Nashik, Maharashtra. Join us in exploring the treasures of this beautiful city!
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <h5 class="text-uppercase">Contact Us</h5>
+                    <p>Email: manojj956187@gmail.com</p>
+                    <p>Phone: +91 9561874628</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.5);">
+            © 2024 Aamch Nashik. All rights reserved.
+        </div>
+    </footer>
+    
+    <!-- Footer End -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz4fnFO9gybFEMnM0AK7fNf3e+/RbZRSOkHRY1I30kjo3y+kz1Oql+fflm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-oBqDVmMz4fnFO9gybFEMnM0AK7fNf3e+/RbZRSOkHRY1I30kjo3y+kz1Oql+fflm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

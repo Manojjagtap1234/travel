@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Anjineri Fort</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .hero {
+            background-image: url('a_collage.jpg'); /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .section-title {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .exit-button {
+            text-align: center;
+            margin: 30px;
+        }
+        .map-container {
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        .map {
+            width: 100%;
+            height: 300px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header / Hero Section -->
+    <div class="hero">
+        <h1 class="display-4" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 70px;">Anjineri Fort</h1>
+    </div>
+
+    <!-- About Section -->
+    <section class="container mt-5">
+        <h2 class="section-title text-center mb-4" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 40px;">About Anjineri Fort</h2>
+        
+        <!-- Row 1: Image and Text -->
+        <div class="row mb-4">
+            <!-- First Image -->
+            <div class="col-md-5 order-md-1 order-2">
+                <img src="anjineri1.jpg" class="img-fluid rounded shadow-sm" alt="Anjineri Fort View" style="height: 300px; object-fit: cover;" >
+            </div>
+            <!-- Text Content -->
+            <div class="col-md-7 d-flex align-items-center order-md-2 order-1">
+                <p style="text-align: justify; margin-bottom: 0;">
+                    Anjaneri is an attraction of Nasik city, which is also an important fort in the Trimbakeshwar region. Situated at 4,264 feet (1,300 m) above sea level, it lies between Nasik and Trimbakeshwar near Godavari river. It neighbors the Brahmagiri range, significant in Hindu traditions as meditation spot of Sage Gautam. In some of the Puranas it is relayed that Hanuman's mother, Anjana Devi, was the daughter of Maharishi Gautama and Ahalya. When she refused to defend her mother against the accusation of adultery, she was cursed by Ahalya that she too would suffer shame by giving birth to a Vanara child before she was married. Anjana Devi, it is said, then resolved to undertake strict penance in the hills near her father's hermitage. Standing on one leg, she became so absorbed in meditation that an anthill is supposed to have grown around her.
+
+                </p>
+            </div>
+        </div>
+    
+        <!-- Row 2: Image and Text (zigzag pattern) -->
+        <div class="row mb-4">
+            <!-- Second Image -->
+            <div class="col-md-5 order-md-2 order-1">
+                <img src="anjinerimandirmain.jpg" class="img-fluid rounded shadow-sm" alt="Anjineri Landscape" style="height: 300px; object-fit: cover;">
+            </div>
+            <!-- Additional Text Content -->
+            <div class="col-md-7 d-flex align-items-center order-md-1 order-2">
+                <p style="text-align: justify; margin-bottom: 0;">
+                    Due to the intensity of her tapas, Indra's throne began to shake and the gods were disturbed by the strong energies that were released. Sage Narada was dispatched to seek Shiva's help in containing these energies who then incarnated as her son
+                    The Brahma Purana while extolling the greatness of the Godavari and the pilgrimage places along its course, narrates that a celestial nymph named Anjana mocked Indra for having a thousand eyes and she was cursed to be born on earth with a monkey face. 
+                    Her friend, Adrika, also annoyed Indra by meowing like a cat and was cursed to be born as a human being with the face of a cat.
+                </p>
+            </div>
+        </div>
+    
+        <!-- Row 3: Image and Text -->
+        <div class="row mb-4">
+            <!-- Third Image -->
+            <div class="col-md-5 order-md-1 order-2">
+                <img src="anjinerirailings.jpg" class="img-fluid rounded shadow-sm" alt="Anjineri Fort Entrance" style="height: 300px; object-fit: cover;">
+            </div>
+            <!-- Additional Text Content -->
+            <div class="col-md-7 d-flex align-items-center order-md-2 order-1">
+                <p style="text-align: justify; margin-bottom: 0;">
+                    Both the nymphs were born among the Vanaras and were later married to Kesari, the king of Anjaneri's Vanara Kingdom. When Sage Agastya took up residence in this forest, Anjana and her friend Adrika served him with great devotion and he granted them each the boon of having an illustrious son. While walking in the forest one day, Anjana attracted the wind god Vayu and Adrika attracted Nirṛti. In due course, Anjana gave birth to Hanuman and her friend to Adri. When their sons grew older, their divine fathers advised them to take their mothers on pilgrimage to the Godavari River. Anjana bathed at a sacred place called Anjana tirtha, while Adrika took a bath at Marjari tirtha, obtaining release from Indra's curse and regained their heavenly forms.
+                    
+                </p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- How to Reach Section -->
+    <section class="container mt-4">
+        <h2 class="section-title" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 40px;">How to Reach</h2>
+        <p style="text-align: justify;">The primary way to reach the Anjaneri fort is from Anjaneri village. One should get down at Anjaneri Phata, which is 20 km away from Nasik on the Nasik–Tryambakeshwar road. Anjaneri village is at a walking distance of 10 to 15 minutes from Anjaneri Phata. Two pinnacles called ‘Navara’ and ‘Navari’ can be seen from Anjaneri village. The way to fort goes through Anjaneri village itself. Next to that there are some steps, through which we reach the plateau of Anjaneri. It takes almost one and the half hour to reach this plateau from Anjaneri village.</p>
+        <div id="map" class="mt-4" style="width: 100%; height: 40px;"></div>
+
+        <h2 class="section-title text-center mb-4" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 40px;">Location</h2>
+        <div class="map-container">
+            <a href="https://www.google.com/maps/place/Anjneri+Fort/@19.9307372,73.5466374,17z/data=!3m1!4b1!4m6!3m5!1s0x3bddebeb09a78a9d:0x383b4b25bb85d76e!8m2!3d19.9307372!4d73.5488261!16s%2Fg%2F11gb6nvllh" target="_blank">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7501.966796166744!2d73.5685720417013!3d19.925104425848676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sanjineri%20fort!5e0!3m2!1sen!2sin!4v1727093702404!5m2!1sen!2sin" width="100%" height="350px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </a>
+        </div>
+
+
+    </section>
+
+    <!-- What to Carry Section -->
+    <section class="container mt-5">
+        <h2 class="section-title text-center mb-4" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 40px;">What to Carry for Anjineri Fort</h2>
+        <p style="text-align: justify;">
+            Preparing for your visit to Anjineri Fort is crucial for a safe and enjoyable experience. Below is a list of recommended items to carry along. Hover over each item for more details!
+        </p>
+        
+        <ul class="list-group">
+            <li class="list-group-item d-flex align-items-center">
+                <img src="shoes.png" alt="Trekking Shoes" class="icon" title="Sturdy trekking shoes for support and comfort.">
+                <span>Sturdy trekking shoes</span>
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+                <img src="wb.png" alt="Water" class="icon" title="Carry at least 2 liters to stay hydrated.">
+                <span>Water (at least 2 liters)</span>
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+                <img src="sunglasses.png" alt="Cap and Sunglasses" class="icon" title="Protect yourself from the sun with a cap and sunglasses.">
+                <span>Cap and sunglasses</span>
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+                <img src="fak.png" alt="First-aid Kit" class="icon" title="A first-aid kit for minor injuries.">
+                <span>First-aid kit</span>
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+                <img src="camera1.png" alt="Camera" class="icon" title="Capture scenic views during your trek.">
+                <span>Camera for scenic views</span>
+            </li>
+        </ul>
+    </section>
+    
+    <style>
+        .icon {
+            width: 30px; /* Adjust size as needed */
+            height: 30px;
+            margin-right: 10px;
+        }
+        .list-group {
+            list-style-type: none;
+            padding: 0;
+        }
+        .list-group-item {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            transition: background-color 0.3s;
+        }
+        .list-group-item:hover {
+            background-color: #e9ecef;
+        }
+    </style>
+    
+
+    <!-- Video Section -->
+    <section class="container-fluid mt-4">
+        <h2 class="section-title" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 40px;">Experience the Fort</h2>
+        <div class="ratio ratio-16x9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SjMmgPEogwc?si=FsViO1xnGwhmyhYJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Accommodation Section -->
+    <section class="container mt-4">
+        <h2 class="section-title" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 40px;">Where to Stay</h2>
+        <p>There are budget hotels and guest houses in the nearby Anjneri village, as well as more options in Nashik city.
+            <ol>
+                <li> 
+                     10 to 12 persons can stay in ‘Anjani Mata Temple’ on the plateau.
+                </li>
+                <li>
+                     10 to 12 persons can stay in ‘Seeta cave’
+                </li>
+            </ol>
+        </p>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="container mt-4">
+        <h2 class="section-title" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 40px;">Resources to Go There</h2>
+        <ul>
+            <li>Private vehicle: The most convenient option</li>
+            <li>Bus: Regular buses from Nashik to Anjneri</li>
+            <li>Taxi or local transport: Available from Anjneri village to the fort base</li>
+        </ul>
+    </section>
+
+    <!-- Exit Button -->
+    <div class="exit-button">
+        <a href="index.html" class="btn btn-danger">Exit to Home Page</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+
+</body>
+</html>

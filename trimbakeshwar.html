@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trimbakeshwar Temple</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .hero {
+            background-image: url('trimbak4.jpg'); /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .section-title {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .exit-button {
+            text-align: center;
+            margin: 30px;
+        }
+        .icon {
+            width: 30px; /* Adjust size as needed */
+            height: 30px;
+            margin-right: 10px;
+        }
+        .list-group {
+            list-style-type: none;
+            padding: 0;
+        }
+        .list-group-item {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            transition: background-color 0.3s;
+        }
+        .list-group-item:hover {
+            background-color: #e9ecef;
+        }
+        .map-container {
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        .map {
+            width: 100%;
+            height: 300px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header / Hero Section -->
+    <div class="hero">
+        <h1 class="display-4" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 70px;" >Trimbakeshwar Temple</h1>
+    </div>
+
+    <!-- About Section -->
+    <section class="container mt-5">
+        <h2 class="section-title text-center mb-4" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 40px;">About Trimbakeshwar Temple</h2>
+        
+        <div class="row mb-4">
+            <div class="col-md-5 order-md-1 order-2">
+                <img src="trimbak1.jpg" class="img-fluid rounded shadow-sm" alt="Trimbakeshwar Temple View" style="height: 300px; object-fit: cover;">
+            </div>
+            <div class="col-md-7 d-flex align-items-center order-md-2 order-1">
+                <p style="text-align: justify; margin-bottom: 0;">
+                    Trimbakeshwar Temple, located in the Nashik district, is one of the 12 Jyotirlingas of Lord Shiva. It is renowned for its stunning architecture and spiritual significance, attracting pilgrims and tourists alike. The temple is surrounded by the beautiful Brahmagiri hills and is a center of Hindu worship, offering various rituals and ceremonies. The site is not only a spiritual hub but also a historical monument that showcases the intricate artistry of ancient Indian architecture.
+                </p>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-md-5 order-md-2 order-1">
+                <img src="trimbakeshwar1.jpg" class="img-fluid rounded shadow-sm" alt="Trimbakeshwar Temple Interior" style="height: 300px; object-fit: cover;">
+            </div>
+            <div class="col-md-7 d-flex align-items-center order-md-1 order-2">
+                <p style="text-align: justify; margin-bottom: 0;">
+                    The temple's significance extends beyond its religious aspects, as it is also a place where many visitors experience peace and tranquility. The rituals performed here are steeped in tradition and have been carried out for centuries. As you explore the temple grounds, you'll find various shrines and statues, each telling its own story of devotion and reverence to Lord Shiva.
+                </p>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-md-5 order-md-1 order-2">
+                <img src="trimbak3.jpg.jpg" class="img-fluid rounded shadow-sm" alt="Trimbakeshwar Temple Festivals" style="height: 300px; object-fit: cover;">
+            </div>
+            <div class="col-md-7 d-flex align-items-center order-md-2 order-1">
+                <p style="text-align: justify; margin-bottom: 0;">
+                    Visitors can partake in various festivals held at the temple throughout the year, which attract large crowds and foster a sense of community. These festivals, marked by vibrant celebrations and traditional performances, offer a unique glimpse into the rich cultural heritage of the region. Whether you come for spiritual solace or to witness the colorful festivities, Trimbakeshwar Temple promises an unforgettable experience.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Reach Section -->
+    <section class="container mt-4">
+        <h2 class="section-title" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 20px;">How to Reach</h2>
+        <p style="text-align: justify;">Trambakeshwar, Near Nashik is 200 kms away from Mumbai. Major cities like Mumbai and Pune and other cities in Maharashtra are well connected with Nashik by means of road and rail services. Trambakeshwar is reachable by bus and taxi services from Nashik. Trambakeshwar and Nashik have facilities of food and lodging.        </p>
+        <div id="map" class="mt-4" style="width: 100%; height: 100px;"></div>
+        <h2 class="section-title text-center mb-4" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 40px;">Location</h2>
+        <div class="map-container">
+            <a href="https://www.google.com/maps/place/Anjneri+Fort/@19.9307372,73.5466374,17z/data=!3m1!4b1!4m6!3m5!1s0x3bddebeb09a78a9d:0x383b4b25bb85d76e!8m2!3d19.9307372!4d73.5488261!16s%2Fg%2F11gb6nvllh" target="_blank">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.8159520055797!2d73.52820737509892!3d19.932159181456772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeb013af2e74b%3A0x716282a3a46b04cc!2sShree%20Trimbakeshwar%20Jyotirling%20Mandir!5e0!3m2!1sen!2sin!4v1727099738172!5m2!1sen!2sin" width="100%" height="350px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </a>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="container-fluid mt-4">
+        <h2 class="section-title" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 40px;">Experience the Temple</h2>
+        <div class="ratio ratio-16x9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dR6MDlPu8xg?si=nwNH5VKrHx-N_ea3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- What to Carry Section -->
+    <section class="container mt-5">
+        <h2 class="section-title text-center mb-4" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 40px;">What to Carry for Trimbakeshwar Temple</h2>
+        <p class="section-title text-center mb-4">
+            Preparing for your visit to Trimbakeshwar Temple is crucial for a smooth experience. Here are the essential items you should carry:
+        </p>
+        
+        <ul class="list-group">
+            <li class="list-group-item d-flex align-items-center">
+                <img src="shoes.png" alt="Comfortable Shoes" class="icon" title="Wear comfortable shoes for walking.">
+                <span>Comfortable walking shoes</span>
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+                <img src="sunglasses.png" alt="Sunglasses" class="icon" title="Protect your eyes with sunglasses.">
+                <span>Sunglasses</span>
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+                <img src="firstaid.png" alt="First-aid Kit" class="icon" title="Carry a small first-aid kit for emergencies.">
+                <span>First-aid kit</span>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Accommodation Section -->
+    <section class="container mt-4">
+        <h2 class="section-title" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 40px;">Where to Stay</h2>
+        <p style="text-align: justify;">
+            When visiting the Trimbakeshwar Temple in Nashik, you'll discover a variety of accommodation options to suit your needs. There are numerous hotels, lodges, and guesthouses in the vicinity, ranging from budget-friendly to more luxurious stays. Many of these places offer convenient access to the temple, allowing you to easily participate in the rituals and enjoy the spiritual ambiance.
+        </p>
+    </br>
+    <p style="text-align: justify;">For a more immersive experience, you might opt for local lodgings that provide a taste of regional culture and hospitality. Additionally, some resorts in the area offer serene surroundings and amenities for relaxation, making your stay both comfortable and enjoyable. To ensure you secure a good spot, especially during peak pilgrimage seasons, it's advisable to book your accommodation in advance.</p>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="container mt-4">
+        <h2 class="section-title" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 40px;">Resources to Go There</h2>
+        <ul>
+            <li>Private vehicle: Convenient for group travel</li>
+            <li>Bus: Regular services from Nashik to Trimbak</li>
+            <li>Taxi: Available for hire in Nashik and Trimbak</li>
+        </ul>
+    </section>
+
+    <!-- Exit Button -->
+    <div class="exit-button">
+        <a href="index.html" class="btn btn-danger">Exit to Home Page</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1  /* Your complete script here */"></script>
+</body>
+</html>
